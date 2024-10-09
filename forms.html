@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Student Data Form</h1>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" required name="firstName">
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" required name="lastName">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" required name="age" max="60" min="15">
+        <br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <br>
+        <label>Subject Interests</label>
+        <input type="checkbox" name="subject">
+        <label for="maths">Maths</label>
+        <input type="checkbox" name="subject">
+        <label for="english">English</label>
+        <input type="checkbox" name="subject">
+        <label for="chemistry">Chemistry</label>
+
+        <br>
+        <label for="county">County</label>
+        <select name="county">
+            <option value="nairobi">Nairobi</option>
+            <option value="kisumu" selected>Kisumu</option>
+            <option value="mombasa">Mombasa</option>
+            <option value="nyeri">Nyeri</option>
+        </select>
+
+        <br>
+        <label for="about">More About You</label>
+        <textarea name="about" rows="4" cols="50"></textarea>
+
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password">
+        <br>
+        <label>DOB</label>
+        <input type="date">
+
+        <br>
+        <label>Grade</label>
+        <input type="range" min="0" max="100">
+
+        <br>
+        <label>Favorite Color: </label>
+        <input type="color">
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
